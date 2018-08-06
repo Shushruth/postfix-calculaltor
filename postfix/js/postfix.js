@@ -4,6 +4,7 @@ function Postfix() {
     this.processData = () => {
         const input = document.getElementById("input");
         const result = document.getElementById("result");
+        this.stack  = [];
         let expr = input.value;
         if (expr === "" || typeof (expr) !== "string") { return 0 };
         let array = expr.split(/\s+/);
